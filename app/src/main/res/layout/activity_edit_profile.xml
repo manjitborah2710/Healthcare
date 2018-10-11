@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:focusedByDefault="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="defaultPosition">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="Personal Details"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/name_create_account"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Sex :"
+                android:paddingLeft="5sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Others"/>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/age_create_account"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Age"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Phone Number 1" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Phone Number 2"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Friend's phone number"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="Address"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Vill/Town"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="P.O."/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="PIN"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="P.S."/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="District"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="State"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Country"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:text="save details"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "135918880364",
+    "firebase_url": "https://healthcare-3c1d4.firebaseio.com",
+    "project_id": "healthcare-3c1d4",
+    "storage_bucket": "healthcare-3c1d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135918880364:android:bb2cb0253cc52aba",
+        "android_client_info": {
+          "package_name": "com.entropy.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135918880364-e5gbivnii0smfiaemqvl1uhl27cvdcs5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNfF4KEI2M8OypZAOM2ujSe63SY8KGQfc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

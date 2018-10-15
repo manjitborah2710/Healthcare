@@ -17,6 +17,11 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:src="@drawable/splash"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/pb_create_account"/>
 
     <EditText
         android:layout_marginTop="10sp"
@@ -42,6 +47,18 @@
         android:layout_weight="2"
         android:hint="Confirm password"
         android:id="@+id/confirm_pwd_create_account"/>
+    <TextView
+        android:id="@+id/error_tv_create_account"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textSize="18sp"
+        android:text="Passwords do not match"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:visibility="gone"/>
 
     <Button
         android:layout_width="match_parent"
@@ -49,6 +66,7 @@
         android:layout_weight="2"
         android:text="create account"
         android:layout_marginTop="10sp"
+        android:id="@+id/create_account_btn_create_account"
         android:onClick="createAccount"/>
 
 </LinearLayout>

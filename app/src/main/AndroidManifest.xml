@@ -20,7 +20,10 @@
             android:name=".LogInActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
+        <activity
+            android:name=".HomePageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

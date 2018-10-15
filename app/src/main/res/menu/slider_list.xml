@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile_nav_drawer"
+            android:title="Profile"
+            android:orderInCategory="1" />
+
+        <item
+            android:id="@+id/doctor_list_nav_drawer"
+            android:title="Doctor's list"
+            android:orderInCategory="1" />
+        <item
+            android:id="@+id/archives_nav_drawer"
+            android:title="Archives"
+            android:orderInCategory="1" />
+
+        <item
+            android:id="@+id/query_nav_drawer"
+            android:title="Query"
+            android:orderInCategory="1" />
+
+
+        <item
+            android:id="@+id/order_meds_nav_drawer"
+            android:title="Order meds"
+            android:orderInCategory="1" />
+
+        <item
+            android:id="@+id/doctor_portal_nav_drawer"
+            android:title="Doctor's portal"
+            android:orderInCategory="1" />
+
+        <item
+            android:id="@+id/help_nav_drawer"
+            android:title="Help"
+            android:orderInCategory="1" />
+        <item
+            android:id="@+id/about_nav_drawer"
+            android:title="About"
+            android:orderInCategory="1" />
+    </group>
+</menu>

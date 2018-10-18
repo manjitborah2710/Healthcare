@@ -7,20 +7,33 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".HomePageActivity">
-
-    <FrameLayout
-        android:id="@+id/content_frame_homepage_activity"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_homepage_activity"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/content_frame_homepage_activity"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
-            app:titleTextColor="#ffffff">
-        </android.support.v7.widget.Toolbar>
+            android:layout_height="?attr/actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_homepage_activity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:titleTextColor="#ffffff"
+                android:theme="@style/AppTheme.AppBarOverlay">
+            </android.support.v7.widget.Toolbar>
+        </FrameLayout>
 
-    </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fragment_layout_area_homepage_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view_homepage_activity"
         android:layout_width="wrap_content"

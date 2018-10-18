@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".CreateAccountActivity"
     android:orientation="vertical"
-    android:padding="10sp"
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:focusedByDefault="true">
@@ -15,110 +14,153 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:verticalScrollbarPosition="defaultPosition">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10sp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
                 android:gravity="center"
                 android:text="Personal Details"
-                android:textStyle="bold"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
             <EditText
-                android:id="@+id/name_create_account"
+                android:id="@+id/name_edit_profile_activity"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
-                android:hint="Name"/>
+                android:hint="Name" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:hint="Sex :"
-                android:paddingLeft="5sp"/>
+                android:paddingLeft="5sp"
+                android:textSize="20sp" />
+
             <RadioGroup
+                android:id="@+id/radio_group_sex_edit_profile_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <RadioButton
+                    android:id="@+id/radio_btn_male_edit_profile_activity"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Male"/>
+                    android:layout_weight="1"
+                    android:text="Male" />
+
                 <RadioButton
+                    android:id="@+id/radio_btn_female_edit_profile_activity"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Female"/>
+                    android:layout_weight="1"
+                    android:text="Female" />
+
                 <RadioButton
+                    android:id="@+id/radio_btn_others_edit_profile_activity"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Others"/>
+                    android:layout_weight="1"
+                    android:text="Others" />
             </RadioGroup>
+
             <EditText
-                android:id="@+id/age_create_account"
+                android:id="@+id/blood_group_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Blood group"/>
+
+            <EditText
+                android:id="@+id/age_edit_profile_activity"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
                 android:hint="Age"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="Email"/>
 
             <EditText
+                android:id="@+id/email_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/phone_no_1_edit_profile_activity"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
                 android:hint="Phone Number 1" />
+
             <EditText
+                android:id="@+id/phone_no_2_edit_profile_activity"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
-                android:hint="Phone Number 2"/>
+                android:hint="Phone Number 2" />
+
             <EditText
+                android:id="@+id/friend_phone_no_edit_profile_activity"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
-                android:hint="Friend's phone number"/>
+                android:hint="Friend's phone number" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
                 android:gravity="center"
                 android:text="Address"
-                android:textStyle="bold"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="Vill/Town"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="P.O."/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="PIN"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="P.S."/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="District"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="State"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:hint="Country"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="60sp"
-                android:text="save details"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/vill_or_town_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Vill/Town" />
+
+            <EditText
+                android:id="@+id/po_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="P.O." />
+
+            <EditText
+                android:id="@+id/pin_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="PIN" />
+
+            <EditText
+                android:id="@+id/ps_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="P.S." />
+
+            <EditText
+                android:id="@+id/district_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="District" />
+
+            <EditText
+                android:id="@+id/state_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="State" />
+
+            <EditText
+                android:id="@+id/country_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Country" />
+
+            <Button
+                android:id="@+id/save_details_btn_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:text="save details" />
 
 
         </LinearLayout>

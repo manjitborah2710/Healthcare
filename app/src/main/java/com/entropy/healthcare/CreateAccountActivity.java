@@ -38,24 +38,29 @@ public class CreateAccountActivity extends AppCompatActivity {
         error_tv.setVisibility(View.GONE);
         if(noEmptyFields()){
             pb.setVisibility(View.VISIBLE);
-            if(pwd.getText().toString().equals(confirm_pwd.getText().toString())){
-                auth.createUserWithEmailAndPassword(email.getText().toString(),pwd.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            startActivity(new Intent(CreateAccountActivity.this,LogInActivity.class));
-                        }
-                        else{
-                            pb.setVisibility(View.GONE);
-                            Toast.makeText(getApplicationContext(),"could not create account..please try again",Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+            try {
+                if(pwd.getText().toString().equals(confirm_pwd.getText().toString())){
+                    createAccountWithPhoneNumber(Integer.parseInt(email.getText().toString()),pwd.getText().toString());
+                }
+                else{
+                    pb.setVisibility(View.GONE);
+                    error_tv.setVisibility(View.VISIBLE);
+                }
+
+
             }
-            else{
-                pb.setVisibility(View.GONE);
-                error_tv.setVisibility(View.VISIBLE);
+            catch (Exception ex){
+                if(pwd.getText().toString().equals(confirm_pwd.getText().toString())){
+                    createAccountWithEmail(email.getText().toString(),pwd.getText().toString());
+                }
+                else{
+                    pb.setVisibility(View.GONE);
+                    error_tv.setVisibility(View.VISIBLE);
+                }
+
             }
+
+
 
         }
     }
@@ -74,5 +79,23 @@ public class CreateAccountActivity extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+
+    public void createAccountWithEmail(String email,String password){
+        auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    startActivity(new Intent(CreateAccountActivity.this,LogInActivity.class));
+                }
+                else{
+                    pb.setVisibility(View.GONE);
+                    Toast.makeText(getApplicationContext(),"could not create account..please try again",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+    public void createAccountWithPhoneNumber(int number,String password){
+
     }
 }

@@ -1,11 +1,14 @@
 package com.entropy.healthcare;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.hardware.input.InputManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -56,6 +59,7 @@ public class LogInActivity extends AppCompatActivity {
                         login(email.getText().toString(),pwd.getText().toString());
                     }
                 }
+                hideKeyboard(this);
                 break;
             }
             case R.id.login_with_fb_btn_login:{
@@ -125,5 +129,11 @@ public class LogInActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void hideKeyboard(Activity activity){
+        InputMethodManager inputManager= (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        View view=activity.getCurrentFocus();
+        inputManager.hideSoftInputFromWindow(view.getWindowToken(),0);
     }
 }

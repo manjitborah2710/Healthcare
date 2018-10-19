@@ -11,6 +11,49 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10sp">
+            <ImageView
+                android:layout_marginTop="10sp"
+                android:id="@+id/profile_picture_profile_fragment"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/no_profile_picture"/>
+            <LinearLayout
+                android:id="@+id/linear_layout_for_uploading_profile_picture_profile_fragment"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/upload_photo_btn_profile_fragment"
+                    android:textAllCaps="false"
+                    android:text="Upload photo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/save_photo_btn_profile_fragment"
+                    android:textAllCaps="false"
+                    android:text="Save"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+                <ProgressBar
+                    android:id="@+id/image_upload_progress_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/delete_photo_btn_profile_fragment"
+                    android:textAllCaps="false"
+                    android:text="Delete photo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
             <LinearLayout
                 android:padding="3sp"
                 android:layout_marginTop="10sp"
